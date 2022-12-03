@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/web3modal1/static/css/main.073c9b0a.css",
+    "main.js": "/web3modal1/static/js/main.dffca2db.js",
+    "static/js/787.696a5214.chunk.js": "/web3modal1/static/js/787.696a5214.chunk.js",
+    "index.html": "/web3modal1/index.html",
+    "main.073c9b0a.css.map": "/web3modal1/static/css/main.073c9b0a.css.map",
+    "main.dffca2db.js.map": "/web3modal1/static/js/main.dffca2db.js.map",
+    "787.696a5214.chunk.js.map": "/web3modal1/static/js/787.696a5214.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.dffca2db.js"
+  ]
+}
