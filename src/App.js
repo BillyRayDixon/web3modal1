@@ -33,7 +33,7 @@ async function connectWallet() {
       <header className="App-header">
         
         <p>
-          This is my web3modal test.
+          This is my Sunday web3modal test.
         </p>
         {
           web3Provider == null ? (
