@@ -1,38 +1,469 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+* { /* this is the default page definition, colour yellow to see where the main page doesnt fit */
+  font-family: 'Archivo', sans-serif;
+  margin: 0px;
+  padding: 0px; 
+  background: transparent;
+  /* color: #dba034; */
+  border-width: 0px !important;   /* border check */
+  box-sizing: border-box;
+/*  border-style:solid; */
+  border-color: #07a8ff;
+}
+
+img {
+  background-color: inherit;
+}
+
+a {
+  background-color: inherit;
+  justify-content: right;
+  
+}
+
+div {
+  background-color: inherit;
+}
+
+body {
+  background-color: white;
+  margin: auto;
+  padding: 0px;
+  overflow-x: hidden;
+  background-repeat: repeat;
+  display: grid;
+  min-width: 300px;
+}
+
+.menu-button { /* could this be the metamask popup chooser */
+  color: cyan;
+  background-color: aqua;
+  font-size: 30px;
+  border-style: none !important;
+
+  border-radius: 0px;
+  outline-width: 0px !important;   /* border check */
+  border-width: 0px !important;
+    padding: 10px;
+  justify-content: right;
+  align-self: right;
+  
+}
+
+.menu-button:hover > a{
+  color: #07a8ff !important;
+  background-color: #dba034; 
+  justify-content: right;
+  color: black;
+}
+
+
+.container {
+  width: 100%;
+background-color: pink;
+
+}
+
+
+.main-page {
+/*  display: flex;
+  flex-wrap: flex; */ 
+
+  gap: 20px;
+  width: 100%;
+  padding: 10px; 
+  padding-top: 70px;
+  background-color: black; 
+
+/*  background-image: linear-gradient(black, black, transparent); */
+  color: #dba034;
+}
+
+
+
+.sec__one {
+    position: relative;
+    width: 100%;
+
+    height: 1000px;
+    padding: 50px 0;
+/*    background-image:url('../src/img/conradImage.png');
+    background-image:url('../src/img/pinkBG.jpeg'); */
+}
+.sec__one h1{
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+  color: #07a8ff;
+
+  justify-content: right;
+
+}
+.navBar .logo img {
+  float: left;
+  max-height: 120px;
+}
+
+.is-active {
+  color: #ff5800!important;
+  color: yellow!important;  /* this is NOT the metamaskpopup */
+  outline-width: 0px !important;   /* border check */
+  border-width: 0px !important;
+  justify-content: right;
+
+}
+
+.conradNavBar {
+  z-index: 7;
+}
+
+.connectWalletButton {
+  background-color: white;
+  font-size: 30px !important;
+  font-variant-caps: all-small-caps !important;
+  opacity: 100%;
+  color: blue;
+  width: 30%;
+  box-sizing: border-box;
+  border-style:none !important;
+  height: 50px;
+  outline-width: 0px !important;   /* border check */
+  border-width: 0px !important;   /* border check */
+/*  width:fit-content; */
+  border-radius: 8px !important;
+  border-color: #07a8ff;
+  justify-content:center !important;
+  align-content:center !important;
+}
+
+.connectWalletButton:focus {
+  border-width:  0px !important;  /* border check */
+  outline-width: 0px !important;   /* border check */
+  color: blue;
+
+}
+
+.connectWalletButton:hover {
+  border-width: 0px !important;   /* border check */
+  outline-width: 0px !important;   /* border check */
+  color: grey;
+
+  background-color: transparent;
+  z-index: 99999;
+  ;
+}
+
+.navBar .col-md-3 {
+  z-index: 7;
+}
+ul.main-menu {
+  display: inline-flex;
+  list-style: none;
+  margin: 0px auto 0;
+  padding: 0;
+  justify-content: right;
+  flex-direction: column;
+  z-index: 7;
+  outline: none;  /* test add */
+  border: none;  /* test add */
+}
+ul.main-menu>li.menu-item:first-child {
+  justify-content: right;
+  padding-left: 0;
+  margin-left: 0;
+  outline: none;  /* test add */
+  border: none;  /* test add */
+
+}
+.menu-item {
+  line-height: 23px;
+  justify-content: right;
+  width: 300px;
+}
+
+li {
+  list-style-type: none;
+  justify-content: right;
+  align-items: right;
+  color: #ff5800;
+  color: cyan; /* is this the metamask menu option ? */
+  outline-width: 0px !important;   /* border check */
+  border-width: 0px !important;   /* border check */
+  border-radius: 10px !important;   
+  outline: none !important;
+  border: none !important;
+}
+
+
+.menu-item a { /* this is the popup menu display the menu items */
+  font-size: 20px; /* font size for menu items in the nav bar */
+/*  font-weight: 300; */
+  line-height: 35px;
+/*  position: relative; */
+  display: block;
+  color: #545050;
+  margin: 0px 7px;
+  text-decoration: none;
+  cursor: pointer;
+  justify-content: right;
+}
+
+.menu-item.menu__qqqitem a{
+  margin: 0px 0px;
+  justify-content: right;
+}
+
+
+
+.sub__menus__arrows{
+  position: relative;
+  justify-content: right;
+}
+.sub__menus__arrows svg, .sub__menus__arrows__full svg{
+  padding-top: 0px;
+  position: absolute;
+  top: 13px;
+  justify-content: right;
+}
+
+
+/* all of this stuff seems to make the main menu disappear from the menu bar and only have the hamburger menu displayed */
+/* @media(max-width:10000px){ */
+
+  
+  .main-nav .menubar__button:hover { /* this is what happens when mouse cursor hovers over the hamburger menu */
+    background-color: #dba034;
+    filter:brightness(200%);
+    color: black; 
+    justify-content: right;
+  }
+
+  .main-nav .menu-item:hover > a { /* this is whre we define how the menu looks when mouse over it */
+    color: grey !important;
+    justify-content: right;
+    background-color: yellow;
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 5px grey);
+    border-radius: 10px; /* this is the border for the shadow */
+    outline-width: 0px !important;   /* border check */
+
+  }
+
+
+  .main-nav .menubar__button {
+    display: block!important; 
+    float: right; 
+    background-color: black;
+    color: #dba034; /* this is the colour of the hamburger menu */
+    padding: 10px 10px;
+    border-radius: 5px; /* this is the radius of the corners of the hamburger menu icon */
+    margin: 0px auto 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 137;
+    justify-content: right;
+    outline-width: 0px !important;   /* border check */
+
+  }
+
+  .main-nav .menubar__button svg{
+    font-size: 20px; 
+    background-color: transparent;
+    justify-content: center;
+  } /* this is the hamburger menu button */
+
+  .main-nav ul.menuIsVisible { /* this is the popup menu, and it's contents */
+    display: block !important;  
+    position:absolute; /* this is where the menu pops up on the screen, left to right */
+  /*  left: 0px; */ /* dont have left AND right defined as 0 because this will cause the menu to float in the middle */
+    right: 0; /* left and right (above) determine the distance the menu is away from the edge */
+    z-index: 107;
+    color: #f44336;
+    width: 330px; /* this is the width of the popup menu */
+    align-items:center;
+    background-color: #dba034;
+    opacity: 90%;
+    justify-content: center;
+    border: 0px solid grey;
+    border-radius: 15px; /* this is the radius for the corners of the yellow popup menu */
+    outline-width: 0px !important;   /* border check */
+    outline: none;  /* test add */
+    border: none;  /* test add */
+  
+    
+   /*  padding-bottom: 15px;
+   // padding-top: 57px;
+   // padding-right: 15px;
+   // padding-left: 15px; */
+    padding: 27px 15px 5px 15px; /* top right bottom left */
+  
+  }
+
+
+  .main-nav .menu-item a {
+    margin: 10px 0px 10px 0px; /* gap around each menu item */
+    text-align: center;   /* text-align here is what aligns the text in the menu (left/right/center) */
+    color: black; 
+    justify-content: center;
+    box-sizing: border-box;
+    border-style:solid;
+    border-width: 10px;
+    border-color: yellow;
+    width: 300px;
+  }
+
+  .main-nav  ul.main-menu {
+
+    
+    display: none; 
+    outline: none;  /* test add */
+  border: none;  /* test add */
+
+  } /* old main menu, dont display it */
+
+  .main-nav .sub__menus__arrows:hover .sub__menus {
+    margin: 0 auto;
+  /*  left: 0;right: 0; */
+    justify-content: right;
+  }
+
+  .sub__menus__Active {
+    display: block!important;
+    margin: 0 auto;
+  /*  left: 0;
+    right: 0; */
+    justify-content: right;
+
+  }
+
+  .sub__menus__Active2 {
+    display: block!important;
+    justify-content: right;
+
+  }
+
+  .menus__categorysss{display: none;}
+  .menus__categorysss2{display: none;}
+
+  .menu-item .sub__menus__full a {
+    text-align: center;
+    justify-content: right;
+  }
+  
+
+
+
+.myFooter {
+  background-color: #dba034;
+  color: black;
+  border: 20px;
+  border-color: red;
+  z-index: 3000;
+  padding: 10px !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.myFooter h2 {
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: black !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footerLinks {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: black !important;
+}
+.footerLinks a {
+
+  margin : 25px;
+  text-decoration: none;
+  color: black !important;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footerLinks a:hover {
+
+  text-decoration: none;
+  color: yellow;
 }
 
-.App-link {
-  color: #61dafb;
+
+.parent-container > span > button {
+  outline: none;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.connectWalletButton > span > button {
+  outline: none;
+  border: none;
 }
+.connectWalletButton.parent-container > span > button {
+  outline: none;
+  border: none;
+}
+.connectWalletButton > parent-container > span > button {
+  outline: none;
+  border: none;
+}
+
+ul > parent-container > span > button {
+  outline: none;
+  border: none;
+}
+
+ul > span > button {
+  outline: none;
+  border: none;
+}
+
+.metaSpan {
+  outline: none;
+  border: none;
+
+}
+
+.thisLi {
+  outline: none;
+  border: none;
+  
+}
+
+.connectButtonButton {
+  outline: none !important;
+  border: none !important;
+  width: 100%;
+  color: darkgreen !important;
+  background-color: #f44336;
+  background-color: black;
+  border-radius: 10px; 
+
+}
+
+.connectButtonButton > span > button {
+  outline: none !important;
+  border: none !important;
+ 
+/*  width: 100%;
+  color: darkgreen;
+  background-color: #f44336; */
+}
+  /* } end of the media definition */
+
+
+
+.buyNFTmenuItem a { 
+  font-size: 30px !important;
+  background-color: yellow;
+  border-radius: 10px;
+  
+}
+
+
+  

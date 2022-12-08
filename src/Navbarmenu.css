@@ -1,0 +1,88 @@
+
+.conradHeader {
+  display:flex;
+  position: fixed; 
+  flex-wrap: nowrap;
+  justify-content:space-between; 
+/*  border-width: 10px;
+  border-color: green; */
+/*  height: 300px; */
+  margin: 0,0,0,0;
+  width: 100%; /* does not account for margin on parent objects */
+  z-index: 8888;
+
+  background-image: linear-gradient(black, black, transparent);
+/*  background-color: transparent; */
+ /* background-color: grey;  */
+
+}
+
+.nested {
+ color: red;
+}
+
+.notNested {
+ color: green;
+}
+
+.hamburgerContainer {
+  display: flex;
+  align-self: flex-start;
+  height: 100%;
+  padding: 10px;
+/*  border-width: 10px;
+  border-color: yellow;  */
+background-color: transparent;
+  z-index: 9999;
+
+}
+
+
+
+.hamburgerIcon {
+  background-color: transparent;
+  height: 0.5em;
+}
+
+.conradLogoContainer {
+  display: flex;
+  align-self: flex-start;
+  height: 80px; /* set this higher than the size of the logo so the gradient goes a bit lower */
+  padding: 10px;
+ /* border-width: 10px;
+  border-color: red; */
+  background-color: transparent;
+  z-index: 9999;
+}
+
+
+
+.conradLogoSmall {
+  display: block;
+  height: 50px;
+  filter:brightness(110%);
+  z-index: 99999;
+/*  background-color: transparent; */
+}
+
+.conradLogoSmall:hover {
+  fill: yellow;
+  filter:brightness(200%)
+/*  background-color: transparent; */
+}
+
+
+
+
+
+ .mainDivInApp { /* this is the container for the main part of the app */
+  border-width: 0px;
+  box-sizing: border-box;
+  border-color: yellow;
+  height: 100%;
+  background-color: transparent;
+ }
+
+
+
+

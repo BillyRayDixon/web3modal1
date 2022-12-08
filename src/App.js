@@ -1,55 +1,50 @@
+import React from 'react';
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 
-import './App.css';
-import Web3Modal from "web3modal";
-import {ethers} from "ethers";
-import {useState} from "react";
- 
-const providerOptions = {
 
-}
+import   './App.css';
+import    './ContentPages.css';
+
+import Home from './Home';
+import Faq from './Faq';
+import Howto from './Howto';
+import BuyNFT from './BuyNFT';
+import Discord from './Discord';
+import Myfooter from './myFooter';
+import Navbarmenu from './Navbarmenu';
+import Nft from './Nft'; 
+
 
 function App() {
-const [web3Provider, setWeb3Provider] = useState(null);
-async function connectWallet() {
-  try {
-    let web3Modal = new Web3Modal( {
-      cacheProvider:false,
-      providerOptions,
-    });
-     const web3ModalInstance = await web3Modal.connect();
-     const web3ModalProvider = new ethers.providers.Web3Provider(web3ModalInstance);
-     console.log(web3ModalProvider); 
-     if(web3ModalProvider){
-      setWeb3Provider(web3ModalProvider);
-     }
-  } catch(error) {
-    console.error(error);
-  }
-}
-
-
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-          This is my Sunday web3modal test.
-        </p>
-        {
-          web3Provider == null ? (
-            // run if null
-            <button onClick={connectWallet}>Connect Wallet</button>
-          ) : (
-            // run if there
-            <div><p>Connected</p>
-            <p>Address {web3Provider.provider.selectedAddress}</p>
-            </div>
-          )
-        }
-        
+   
+    <div className="mainDivInApp">
+      <Router basename="/">
 
-      </header>
+        {/* Add Menu Component */}
+        <Navbarmenu />
+
+        <div>
+
+        <Routes> 
+          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Faq" element={<Faq/>} />
+          <Route path="/Howto" element={<Howto />} />
+          <Route path="/BuyNFT" element={<BuyNFT />} />
+          <Route path="/Discord" element={<Discord />} />
+          <Route path="/Nft" element={<Nft />} />
+
+          
+        </Routes>
+
+        </div>
+        <Myfooter />
+      </Router> 
+
     </div>
+    
   );
 }
 
