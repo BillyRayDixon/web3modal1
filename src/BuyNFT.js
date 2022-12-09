@@ -14,7 +14,7 @@ import MMABSPIN from './files/MMAB Spin NFT 1080p.mp4';
 var conradWalletConnected = 0; // will be 0 if wallet not connected, 1 if wallet is connected
 var conradNetworkConnected = 0; // will be 0 if not on goerli network, 1 if it is on the correct network
 var conradSiteConnected = 0;  // add the above two vars, if this var eq 2 then all good to proceed
-var myConnectionString = "no connection data yet";
+let myConnectionString = "no connection data yet";
 //var myCardVisibility = "cardContainerHidden";
 let conradWalletMessage = "Cryptowallet : Not Connected";
 
@@ -313,12 +313,12 @@ const BuyNFT = () => {
              };  //end of "wallet is connected" block
 
              if (conradSiteConnected === 0) {
-                     myConnectionString = "No wallet, no network.." + conradWalletConnected + " " + conradNetworkConnected + " " + conradSiteConnected + ".."
+                     myConnectionString = conradWalletConnected + " " + conradNetworkConnected + " " + conradSiteConnected
               };
 
-             if (conradSiteConnected === 1) {myConnectionString = "Wallet, no network.." + conradWalletConnected + " " + conradNetworkConnected + " " + conradSiteConnected + ".."};
+             if (conradSiteConnected === 1) {myConnectionString = conradWalletConnected + " " + conradNetworkConnected + " " + conradSiteConnected};
              if (conradSiteConnected === 2) {
-                     myConnectionString = "Wallet, network.." + conradWalletConnected + " " + conradNetworkConnected + " " + conradSiteConnected + "..";
+                     myConnectionString = conradWalletConnected + " " + conradNetworkConnected + " " + conradSiteConnected;
                      if (numberOfNFTOwned === 0) {
                             displayEmailForm = "cardContainerHidden";
                             displayMyNFTCollection = "cardContainerHidden";
@@ -347,6 +347,7 @@ const BuyNFT = () => {
               <div className="cardContainer"> {/* the card that has some info on the connection, and main logic for page */}
                      <section className="mintPageCardContainer">
                      {informationalSection()}
+                     <div className="hideMe"><p className="hideMe">{myConnectionString}</p> </div>
                      <p>Wallet Address : {myShortAdd}</p>
                      <p>Number of NFTs owned : {numberOfNFTOwned}</p>
                      </section>
