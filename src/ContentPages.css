@@ -130,7 +130,6 @@ border-image-source:
   radial-gradient(
     circle at left, #dba13489, transparent 30%) !important;
 border-image-slice: 1 !important;
-
   }
 
   .mintPageCardContainer {
@@ -518,11 +517,11 @@ flex-direction: row;
  }
 
  .myMintSection {
-  padding : 0px;
+  padding : 0px 0px 0px 0px;
 
 /*  width: 200px !important; */
 background-color:  rgb(22, 22, 22) !important;
-background-color:  rgb(222, 40, 40) !important;
+/*background-color:  rgb(222, 40, 40) !important; */
 color: #dba034;
 text-align: center;
 align-items: center;
@@ -532,16 +531,23 @@ flex-direction: row;
  }
 
 .myMintButton {
-  padding : 00px;
+/*  padding : 0px 0px 0px 0px !important;*/
+  padding : 0px;
+  margin: 0px;
   display: flex;
-width: 400px !important;
-background-color: rgb(74, 74, 74);
+ width: 100% !important; 
+/*background-color: rgb(74, 74, 74) !important; */
 color: #dba034;
 text-align: center;
 align-items: center;
 align-content: center !important; 
 justify-content: center;
 flex-direction: row;
+
+}
+
+.myMintButton button {
+color: black !important;
 }
 
 .submitButtonStyle  {
@@ -552,7 +558,6 @@ flex-direction: row;
  /* display: flex; */
 /* width: 400px !important; */
 /* background-color: rgb(74, 74, 74); */
-
 color: unset;
 color: rgb(255, 255, 255) !important;
 background-color: #222;
@@ -569,25 +574,33 @@ flex-direction: column;
 color: red;
 }
 
-.newSubmitButtonStyle button {
-  border-radius: 15px;
-  background: #dba034 !important;
- /* white-space: nowrap; */
+.submitButtonStyleNEW  {
+  padding-top : 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
   padding: 12px 40px;
- /* color: #000 !important;
-/*  font-size: 16px; */
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
+ /* display: flex; */
+/* width: 400px !important; */
+/* background-color: rgb(74, 74, 74); */
+color: unset;
+color: black !important;
+background-color: #dba034 !important; 
+border-radius: 5px;
+text-align: center;
+align-items: center;
+align-content: center !important; 
+justify-content: center;
+flex-direction: column;
 }
 
-  .newSubmitButtonStyle button:hover {
-      transition: all 0.2s ease-in-out;
-      background: yellow;
-      color: black;
-  }
+.submitButtonStyleNEW *:hover {
+
+  background-color: yellow !important;
+  color: black !important;
+}
+
+
+
 
 
 
@@ -683,16 +696,16 @@ border-image-slice: 1 !important;
 }
 
 .nftGridSection {
+width: 100%;
 
-  background-color: pink; 
    background-color: black; 
 
 }
 
 .nftHolderFormSectionContainerTest a {
-  color: #dba034 !important;
+/*  color: #dba034 !important; */
   text-decoration: none;
-};
+}
 
 
 .nftHolderFormCardInfo {
@@ -730,7 +743,7 @@ background-image: url("./img/wideImage170px.png");
 width: 100%;
 height: 170px;
 opacity: 0.5;
-  overflow: hidden;
+  overflow: hidden; 
   justify-content: center;
   justify-items: center;
   justify-self: center;
@@ -738,3 +751,79 @@ opacity: 0.5;
   align-self: center;
   align-content: center;
 }
+
+.cardContainerHidden {
+  display: none;
+  background-color: rgb(22, 22, 22);
+/*   background-color: rgb(28, 101, 144); */
+            padding: 20px 20px 20px 20px;
+  margin: 10px;
+  border-radius: 10px;
+/*     min-width: 400px;
+  max-width: 50%; */
+  width: 320px;
+  height:max-content;
+  align-content: center !important; 
+  justify-content: space-evenly;
+  align-self:center;
+  max-height:max-content;
+  min-height:min-content;
+  text-align: center;
+  border-inline-start: 1px solid !important;
+border-block-start: 1px solid !important;
+border-image-source: 
+radial-gradient(
+circle at left, #dba13489, transparent 30%) !important;
+border-image-slice: 1 !important;
+}
+
+.mintPageFlexMiddleSection {
+  display: flex;
+
+/*  background-color: rgb(51, 201, 66);  */
+  background-color: black;
+/*  background-color: red;*/
+  border-radius: 10px;
+  padding: 0px 0px 00px 0px;
+  margin: 0px;
+  align-items:flex-start;
+  align-content:flex-start;
+
+}
+
+.mintPageFlexMiddleSection div {
+  align-self:stretch;
+
+}
+
+.nftEmailFormCardInfo {
+  display: flex;
+  flex-direction: column !important;
+  width: 250px !important;
+  color: #dba034 !important;
+
+
+}
+
+.nftEmailFormCardInfo p {
+padding: 4px;
+color: #dba034 !important;
+}
+
+.nftEmailFormCardInfo button {
+font-size: 16px;
+height: 50px;
+align-items: center;
+text-align: center;
+text-justify: auto;
+padding: 25px;
+justify-content: center;
+color: black !important;
+  background-color: #dba034 !important;
+
+  }
+
+  .nftEmailFormCardInfo button:hover {
+    font-size: 16px;
+      background-color: yellow !important;
+      }

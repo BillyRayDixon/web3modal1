@@ -30,7 +30,7 @@ body {
   background-color: white;
   margin: auto;
   padding: 0px;
-  overflow-x: hidden;
+  overflow-x: hidden; 
   background-repeat: repeat;
   display: grid;
   min-width: 300px;
