@@ -7,7 +7,7 @@ import   './ContentPages.css';
 
 import metamask from './img/metamaskfox.png';
 import coinbase from './img/Coinbase_Wordmark.png';
-
+import leaderboard from './img/LEADERBOARD100.png'; 
 
 const Howto = () => {
        return (
@@ -58,6 +58,10 @@ const Howto = () => {
           </div>
   </div>
 </section>
+
+<div className="nftSpinImageContainer">
+<img src={leaderboard} alt='Conrad'></img>
+</div>
 
 <section className="homeFlexMiddleSection">
 

@@ -16,7 +16,7 @@ const myFooter = () => {
                      <a href="https://www.instagram.com/conradofficial" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a>
                      <a href="https://www.facebook.com/ConradOfficial" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook"></i></a>
                      <a href="https://www.tiktok.com/@conradofficial" target="_blank" rel="noreferrer"><i className="fa-brands fa-tiktok"></i></a>
-                     <a href="https://discord.gg/QgUafNvm" target="_blank" rel="noreferrer"><i className="fa-brands fa-discord"></i></a>
+                     <a href="https://discord.gg/KnKRdBU85n" target="_blank" rel="noreferrer"><i className="fa-brands fa-discord"></i></a>
                      </p>
 
               </div>

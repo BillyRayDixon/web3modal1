@@ -63,7 +63,7 @@ import    './ContentPages.css';
                             <li className="menu-item" ><NavLink onClick={toggleClass} to={`./Home`}>HOME</NavLink> </li>
                             <li className="menu-item" ><NavLink onClick={toggleClass} to={`./Faq`}>FAQ</NavLink> </li>
                             <li className="menu-item" ><NavLink onClick={toggleClass} to={`./Howto`}>HOW TO BUY</NavLink> </li>  
-                            <li className="menu-item" ><a href="https://discord.gg/QgUafNvm" target="_blank" rel="noreferrer">JOIN OUR DISCORD</a></li> 
+                            <li className="menu-item" ><a href="https://discord.gg/KnKRdBU85n" target="_blank" rel="noreferrer">JOIN OUR DISCORD</a></li> 
                             <li className="menu-item" ><NavLink onClick={toggleClass} to={`./BuyNFT`}>BUY NFT</NavLink> </li>                       </ul>
                     </nav>        
                 </div>

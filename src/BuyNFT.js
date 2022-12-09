@@ -6,6 +6,10 @@ import styled from 'styled-components';
 
 import    './App.css';
 import   './ContentPages.css';
+import GSTQAI from './files/GSTQ AI NFT small.mp4';
+import MMABAI from './files/MMAB AI NFT small.mp4';
+import GSTQSPIN from './files/GSTQ Spin NFT 1080p.mp4';
+import MMABSPIN from './files/MMAB Spin NFT 1080p.mp4';
 
 var conradWalletConnected = 0; // will be 0 if wallet not connected, 1 if wallet is connected
 var conradNetworkConnected = 0; // will be 0 if not on goerli network, 1 if it is on the correct network
@@ -84,7 +88,7 @@ const MintNumber = styled.h3`
   color: #dba034;
 `;
 const NftGrid = styled.div`
-  max-width: 95vw;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -131,6 +135,29 @@ function informationalSection() {
        };
        
 const BuyNFT = () => {    
+
+       function RenderDownload(song) {
+              if (song === "God Save the Queen") {
+                return (
+                  <>
+                  <a href={GSTQAI} download>Click here to download the AI Video to your device</a>
+                  <br/>
+                  <br/>
+                  <a href={GSTQSPIN} download>Click here to download the NFT Video to your device</a>
+                  </>
+                  
+                )
+              } else if (song === "Make Me a Believer") {
+                return (
+                  <>
+                  <div><a href={MMABAI} download>Click here to download the AI Video to your device</a></div>
+                  <br/>
+                  <br/>
+                  <div><a href={MMABSPIN} download>Click here to download the NFT Video to your device</a></div>
+                  </>
+                )
+              };
+            };
 
        // ************* mint button section *************************************** //
        // ************* mint button section *************************************** //
@@ -330,7 +357,7 @@ const BuyNFT = () => {
         {/*      <div className="cardContainer"> */}
 
 
-              <div className="homeFlexMiddleSection"> 
+              <div className="mintPageFlexMiddleSection">  
 
               {/* display email form modal, if connected */}
               <div className={displayEmailForm}> 
@@ -401,13 +428,9 @@ const BuyNFT = () => {
 
               
               <div className={displayMyNFTCollection}> {/* this is where we will display the nft collection, if customer has them */}
-              <p>after connection section</p>
-                     <p>Wallet Address : {myShortAdd}</p>
-                     <p>Conrad site connected : {conradSiteConnected}</p>
-                     <p>My connection string : {myConnectionString}</p>
-                     <p>Number of NFTs owned : {numberOfNFTOwned}</p>
 
-                     <NftGrid className={displayMyNFTCollection}>
+
+                     <NftGrid className='displayMyNFTCollectionGrid'>
       {data?.map((nft) => (
         <NftBox className="nftBoxSection" key={nft.metadata.id.toString()}>
           <h3 className="nftMediaLabel" style={{backgroundColor: '#000', Color: '#dba034'}}>{nft.metadata.attributes[0].value} NFT #{nft.metadata.id}</h3>
@@ -425,7 +448,7 @@ const BuyNFT = () => {
           
           <br/>
           <div className="nftDownloadSection">
- {/*         {RenderDownload(nft.metadata.attributes[0].value)} */}
+          {RenderDownload(nft.metadata.attributes[0].value)} 
         </div>
           
         </NftBox>

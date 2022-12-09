@@ -494,6 +494,12 @@ padding: 10px;
   color: white;
   
  }
+
+ .middleSectionCardInfo a:hover {
+  color: yellow;
+  
+ }
+
  .howToDiv h2 {
 
  padding: 30px;
@@ -652,7 +658,7 @@ margin: 5px;
 
    background-color: rgb(28, 101, 144); 
    background-color: rgb(22, 22, 22);
-            padding: 10px 10px 10px 10px;
+            padding: 5px 5px 5px 5px;
   margin: 5px;
   border-radius: 15px;
 /*     min-width: 400px;
@@ -679,9 +685,9 @@ border-image-slice: 1 !important;
    background-color: green; 
    background-color: black;
    background-color: rgb(22, 22, 22);
-padding: 5px;
+padding: 5px !important;
 
-margin: 0px;
+margin: 5px !important;
 align-self: flex-start;
 
 border-inline-start: 1px solid !important;
@@ -782,8 +788,8 @@ border-image-slice: 1 !important;
 
 /*  background-color: rgb(51, 201, 66);  */
   background-color: black;
-/*  background-color: red;*/
-  border-radius: 10px;
+
+  border-radius: 5px;
   padding: 0px 0px 00px 0px;
   margin: 0px;
   align-items:flex-start;
@@ -827,3 +833,30 @@ color: black !important;
     font-size: 16px;
       background-color: yellow !important;
       }
+
+.displayMyNFTCollectionGrid {
+  width:100% !important;
+padding: 0px !important;
+  margin: 0px !important;
+}
+
+.leaderboardContainer {
+display: flex;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+
+align-items: center;
+justify-content: center;
+  padding: 0px;
+  margin: 0px;
+
+
+
+
+}
+.leaderboardContainer img{
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
