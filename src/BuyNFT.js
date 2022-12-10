@@ -358,7 +358,7 @@ const BuyNFT = () => {
         {/*      <div className="cardContainer"> */}
 
 
-              <div className="mintPageFlexMiddleSection">  
+              <div className="homeFlexMiddleSection">  
 
               {/* display email form modal, if connected */}
               <div className={displayEmailForm}> 
