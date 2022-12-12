@@ -379,6 +379,7 @@ li {
   margin-bottom: 20px;
   text-decoration: none;
   color: black !important;
+
 }
 .footerLinks a {
 
@@ -391,9 +392,24 @@ li {
 .footerLinks a:hover {
 
   text-decoration: none;
-  color: yellow;
+
+  color: yellow !important;
 }
 
+.footerLinks img {
+  width: 30px;
+  height: 30px;
+  align-items: center !important;
+  justify-content: center !important;
+  src: url("./img/openseaOrange1.png");
+}
+
+.footerLinks img:hover {
+  text-decoration: none;
+  background-color: green !important;
+  color: yellow !important;
+  src: url("./img/openseaYellow1.png");
+}
 
 .parent-container > span > button {
   outline: none;
@@ -465,5 +481,7 @@ ul > span > button {
   
 }
 
-
+#openseaIcon:hover {
+  content: url("./img/openseaYellow1.png");
+}
   

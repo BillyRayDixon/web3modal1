@@ -19,7 +19,7 @@ let myConnectionString = "no connection data yet";
 let conradWalletMessage = "Cryptowallet : Not Connected";
 
 var myWalletIcon = "fa fa-times";
-let myConradNetworkMessage = "Network ID uknown";
+let myConradNetworkMessage = "Network ID unknown";
 let myConradNetworkMessage2 = "Please connect to correct network";
 
 var myNetworkIcon = "fa fa-times";
