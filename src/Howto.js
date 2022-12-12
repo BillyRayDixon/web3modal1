@@ -139,7 +139,7 @@ const Howto = () => {
 
   <div className='middleSectionCard'>
           <div className='middleSectionCardInfo'>        
-                  <h3>NFT Purchase - Molbile.</h3>
+                  <h3>NFT Purchase - Mobile.</h3>
                   <p><a href="https://youtu.be/-Yjnu7y0yYY"  target="_blank" rel="noreferrer"><img src={metamask} alt="wallet"/></a></p>
                      <p><a href="https://youtu.be/-Yjnu7y0yYY"  target="_blank" rel="noreferrer">Click here for Youtube walkthrough showing the purchase of a Conrad NFT using Metmask on a mobile device (iPhone).</a></p>
 
