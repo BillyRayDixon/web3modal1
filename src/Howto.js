@@ -99,7 +99,7 @@ const Howto = () => {
 
   <div className='middleSectionCard'>
           <div className='middleSectionCardInfo'>        
-                  <h3>iPhone.</h3>
+                  <h3>Mobile.</h3>
                   <p><a href="https://youtu.be/pxtjRlBdiDM"  target="_blank" rel="noreferrer"><img src={coinbase} alt="wallet"/></a></p>
                      <p><a href="https://youtu.be/pxtjRlBdiDM"  target="_blank" rel="noreferrer">Click here for Youtube walkthrough of installing Coinbase wallet on your iPhone</a></p>
 <TinySpacer2/>
@@ -112,7 +112,7 @@ const Howto = () => {
 
   <div className='middleSectionCard'>
           <div className='middleSectionCardInfo'>        
-                  <h3>Mac/PC.</h3>
+                  <h3>Desktop/Laptop.</h3>
                   <p><a href="https://youtu.be/xnWiIp4Ex9s"  target="_blank" rel="noreferrer"><img src={coinbase} alt="wallet"/></a></p>
                      <p><a href="https://youtu.be/xnWiIp4Ex9s"  target="_blank" rel="noreferrer">Click here for Youtube walkthrough of installing Coinbase wallet on your Mac or PC</a></p>
                      <TinySpacer2/>
@@ -128,6 +128,16 @@ const Howto = () => {
 
     
   <section className="homeFlexMiddleSection">
+ 
+  <div className='middleSectionCard'>
+          <div className='middleSectionCardInfo'>        
+                  <h3>NFT Purchase - Mobile.</h3>
+                  <p><a href="https://youtu.be/-Yjnu7y0yYY"  target="_blank" rel="noreferrer"><img src={metamask} alt="wallet"/></a></p>
+                     <p><a href="https://youtu.be/-Yjnu7y0yYY"  target="_blank" rel="noreferrer">Click here for Youtube walkthrough showing the purchase of a Conrad NFT using Metmask on a mobile device (iPhone).</a></p>
+
+          </div>
+  </div>
+ 
   <div className='middleSectionCard'>
           <div className='middleSectionCardInfo'>        
                   <h3>NFT Purchase - Desktop.</h3>
@@ -137,14 +147,7 @@ const Howto = () => {
           </div>
   </div>
 
-  <div className='middleSectionCard'>
-          <div className='middleSectionCardInfo'>        
-                  <h3>NFT Purchase - Mobile.</h3>
-                  <p><a href="https://youtu.be/-Yjnu7y0yYY"  target="_blank" rel="noreferrer"><img src={metamask} alt="wallet"/></a></p>
-                     <p><a href="https://youtu.be/-Yjnu7y0yYY"  target="_blank" rel="noreferrer">Click here for Youtube walkthrough showing the purchase of a Conrad NFT using Metmask on a mobile device (iPhone).</a></p>
 
-          </div>
-  </div>
 
 
   </section> 
